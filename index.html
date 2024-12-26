@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoplist</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="logo">
+        <img src="/assets/SHIPLIST (156 x 40 px).svg" alt="Logo" />
+      </div>
+      <div id="backButton">
+        <a href="https://www.google.com.br/">&larr; Voltar</a>
+      </div>
+      <div id="title">
+        <h1>Compras da semana</h1>
+      </div>
+      <div>
+        <input id="ipt" type="text" placeholder="    Adicione um novo item" />
+        <button id="btn" type="button" onclick="itemAdd()">
+          Adicionar item
+        </button>
+        <ul id="list"></ul>
+      </div>
+    </div>
+    <script src="/scripts.js"></script>
+  </body>
+</html>
