@@ -85,7 +85,26 @@ li {
 li input {
   width: 18px;
   height: 18px;
+  border-radius: 6px;
+  filter: opacity(0.5);
+  appearance: none;
+  background-color: saddlebrown;
+  transform: matrix(0, 1, 1, 0, 0, 0);
 }
+li input:checked::before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 5px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(-45deg);
+  transform-origin: bottom right;
+}
+li input:hover {
+  filter: opacity(1);
+}
+
 li span {
   flex-grow: 1;
   margin-left: 10px;
