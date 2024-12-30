@@ -14,7 +14,7 @@ function itemAdd() {
     li.innerHTML = ` 
       <input type="checkbox" />
       <span>${itemText}</span>
-      <button class="deleteButton" onclick="deleteItem(this)">Remover</button>
+      <button class="deleteButton" onclick="deleteItem(this)"><img src="assets/dumpIcon.svg" alt="Ícone lixeira"></button>
     `
     list.appendChild(li)
     input.value = ""

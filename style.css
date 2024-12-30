@@ -29,11 +29,10 @@ body {
   background: none;
   border: none;
   color: brown;
+  filter: contrast(0.5);
 }
 #backButton a:hover {
-  background-color: navajowhite;
-  border: 1px solid brown;
-  border-radius: 8px;
+  filter: contrast(1);
 }
 #title {
   margin-top: 18px;
@@ -90,6 +89,7 @@ li input {
   appearance: none;
   background-color: saddlebrown;
   transform: matrix(0, 1, 1, 0, 0, 0);
+  cursor: pointer;
 }
 li input:checked::before {
   content: "";
@@ -116,4 +116,8 @@ li button {
   font-size: 18px;
   color: sienna;
   cursor: pointer;
+  filter: contrast(0.5);
+}
+li button:hover {
+  filter: contrast(1);
 }
